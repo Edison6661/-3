@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="blue-section">
+        <div class="centered">
+            <h2>Лабораторна 3</h2>
+            <p>Робота з програмним забезпеченням</p>
+        </div>
+    </div>
+    <div class="white-section">
+        <div class="monitor"></div>
+        <div class="buttons">
+            <button onclick="displayText('Назва')">Назва</button>
+            <button onclick="displayText('Мета')">Мета</button>
+            <button onclick="displayText('Робота')">Робота</button>
+            <button onclick="displayText('Висновок')">Висновок</button>
+        </div>
+    </div>
+
+    <script>
+        function displayText(text) {
+            document.getElementById('display-text').innerText = text;
+        }
+    </script>
+</body>
+</html>
