@@ -51,43 +51,43 @@ body {
     border-color: blue; /* Колір обводки при наведенні */
 }
 
-
 .blue-section {
     background-color: blue;
     color: white;
     padding: 20px;
-    width: 100%;
-    height: 30vh; /* Змінено висоту на 30% */
+    text-align: center; /* Центруємо текст у блоку */
 }
 
 .white-section {
     background-color: white;
     padding: 20px;
-    width: 100%;
-    height: 70vh; /* Змінено висоту на 70% */
+    text-align: center; /* Центруємо текст у блоку */
+}
+
+.centered {
+    text-align: center; /* Центруємо текст всередині блоку */
 }
 
 .monitor {
-    width: 40%; /* Змінено ширину на 40% */
-    height: 60%; /* Змінено висоту на 60% */
+    width: 60%; /* Змінюємо ширину монітора */
+    height: 300px; /* Змінюємо висоту монітора */
+    background-color: #f5f5dc; /* Жовтий колір монітора */
+    margin: 0 auto 20px auto; /* Вирівнюємо по центру зверху і знизу */
     border: 2px solid black;
-    margin: 20px auto;
-    text-align: center;
-    float: right; /* Вирівнюємо зправа */
+    border-radius: 10px;
 }
 
 .buttons {
     display: flex;
-    justify-content: flex-start;
-    margin-left: 20px;
+    justify-content: center; /* Центруємо кнопки у блоку */
 }
 
 .buttons button {
-    margin-right: 10px;
-    border-radius: 10px;
-    background-color: blue; /* Змінено колір на синій */
+    margin: 0 10px; /* Збільшуємо відступи між кнопками */
+    border-radius: 20px; /* Збільшуємо радіус кутів кнопок */
+    background-color: blue;
+    color: white;
     border: 2px solid black;
-    padding: 5px 10px;
-    color: white; /* Змінено колір тексту на білий */
+    padding: 10px 20px;
     cursor: pointer;
 }
