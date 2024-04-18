@@ -134,3 +134,68 @@ body {
     padding: 10px 20px;
     cursor: pointer;
 }
+
+/* Загальні стилі залишаємо незмінними */
+
+.blue-section {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.white-section {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.centered {
+    text-align: center;
+}
+
+.monitor {
+    width: 60%;
+    height: 300px;
+    background-color: #f5f5dc;
+    margin: 0 auto 20px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    margin: 0 10px;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    border: 2px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Змінені стилі для кнопок "Лабораторна 3" */
+
+.laboratory3 .buttons {
+    display: flex;
+    justify-content: flex-start; /* Щоб кнопки розміщувалися зліва */
+    margin-left: 20px;
+}
+
+.laboratory3 .buttons button {
+    border-radius: 20px; /* Заокруглені кути */
+    background-color: blue;
+    color: white;
+    border: 2px solid black;
+    padding: 15px 25px; /* Більші кнопки */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Плавна зміна кольору */
+}
+
+.laboratory3 .buttons button:hover {
+    background-color: yellow; /* Колір при наведенні */
+}
