@@ -5,17 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лабораторна 3</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Змінені стилі для кнопок "Лабораторна 3" */
+        .laboratory3 .buttons {
+            display: flex;
+            justify-content: flex-start; /* Щоб кнопки розміщувалися зліва */
+            margin-left: 20px;
+        }
+
+        .laboratory3 .buttons button {
+            border-radius: 20px; /* Заокруглені кути */
+            background-color: blue;
+            color: white;
+            border: 2px solid black;
+            padding: 15px 25px; /* Більші кнопки */
+            cursor: pointer;
+            transition: background-color 0.3s; /* Плавна зміна кольору */
+        }
+
+        .laboratory3 .buttons button:hover {
+            background-color: yellow; /* Колір при наведенні */
+        }
+    </style>
 </head>
 <body>
     <div class="blue-section">
-        <div class="centered">
-            <h2>Лабораторна 3</h2>
-            <p>Робота з програмним забезпеченням</p>
-        </div>
+        <h2>Лабораторна 3</h2>
+        <p>Утюги робота в магазині</p>
     </div>
     <div class="white-section">
-        <div class="monitor"></div>
-        <div class="buttons">
+        <div class="monitor">
+            <p id="display-text">Тут буде відображатися текст з кнопок</p>
+        </div>
+        <div class="buttons laboratory3">
             <button onclick="displayText('Назва')">Назва</button>
             <button onclick="displayText('Мета')">Мета</button>
             <button onclick="displayText('Робота')">Робота</button>
