@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 5</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Зміни для п'ятого завдання */
+        .blue-section {
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            width: 100%;
+            height: 30vh; /* Зменшуємо висоту синьої секції */
+            text-align: center;
+            position: relative; /* Встановлюємо позицію для підсекції */
+        }
+
+        .sub-section {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 70%;
+            background-color: #4682B4; /* Тускло синій колір */
+            background-image: url('circles.png'); /* Візерунок з кругами */
+        }
+
+        .white-section {
+            background-color: white;
+            padding: 20px;
+            width: 100%;
+            height: 60vh; /* Збільшуємо висоту білої секції */
+        }
+
+        .monitor {
+            width: 70%;
+            height: 70%;
+            border: 2px solid black;
+            margin-right: 20px; /* Змінюємо відступи */
+            float: right; /* Вирівнюємо вправо */
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px; /* Збільшуємо відступи */
+        }
+
+        .buttons button {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: blue;
+            color: white;
+            border: 2px solid black;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Плавна зміна кольору */
+        }
+
+        .buttons button:hover {
+            background-color: yellow; /* Колір при наведенні */
+        }
+    </style>
+</head>
+<body>
+    <div class="blue-section">
+        <h2>Лабораторна 5</h2>
+        <p>Утюги робота в магазині</p>
+        <div class="sub-section"></div> <!-- Додано підсекцію -->
+    </div>
+    <div class="white-section">
+        <div class="monitor">
+            <p id="display-text">Тут буде відображатися текст з кнопок</p>
+        </div>
+        <div class="buttons">
+            <button onclick="displayText('Назва')">Назва</button>
+            <button onclick="displayText('Мета')">Мета</button>
+            <button onclick="displayText('Робота')">Робота</button>
+            <button onclick="displayText('Висновок')">Висновок</button>
+        </div>
+    </div>
+
+    <script>
+        function displayText(text) {
+            document.getElementById('display-text').innerText = text;
+        }
+    </script>
+</body>
+</html>
